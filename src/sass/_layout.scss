@@ -1,0 +1,14 @@
+.pages {
+  > * {
+    display: none;
+  }
+
+  > .active-page {
+    display: block;
+  }
+}
+
+.card-wrapper {
+  width: 98vw;
+  position: relative;
+}

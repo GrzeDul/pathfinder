@@ -1,0 +1,48 @@
+.left {
+  background: transparent url(../../images/1.jpg);
+  height: 370px;
+  background-size: contain;
+  background-position: 80px center;
+  justify-content: flex-end;
+  margin-top: 180px;
+  transform: translateX(-100vw);
+
+  > * {
+    margin-left: 415px;
+  }
+
+  p {
+    margin-bottom: 60px;
+  }
+}
+
+.right {
+  background: transparent url(../../images/2.jpg);
+  height: 450px;
+  background-size: auto 95%;
+  background-position: 400px center;
+  margin-top: 100px;
+  transform: translateX(100vw);
+
+  > * {
+    margin-left: 150px;
+  }
+
+  h2 {
+    margin-top: 85px;
+  }
+}
+
+.card {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  opacity: 0;
+  width: 200vw;
+}
+
+.visible {
+  opacity: 100%;
+  transform: translateX(0);
+}
