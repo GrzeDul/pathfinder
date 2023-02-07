@@ -1,0 +1,49 @@
+.game {
+  .game-board,
+  .game-tile {
+    border: 1px #fff solid;
+    width: fit-content;
+  }
+
+  .game-tile {
+    width: 40px;
+    height: 40px;
+  }
+
+  .game-board {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .game-text {
+    margin-top: 120px;
+  }
+
+  .game-button,
+  .game-tile {
+    cursor: pointer;
+  }
+
+  .game-button {
+    border: none;
+    background: $color-orange;
+    color: $color-main-light;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 1.1em;
+    line-height: 0.5;
+    letter-spacing: 2px;
+    margin-top: 60px;
+
+    &:active {
+      transform: scale(0.9);
+      filter: brightness(80%);
+    }
+  }
+
+  .active {
+    background: $color-orange;
+  }
+}

@@ -1,11 +1,13 @@
 import settings from './settings.js';
 import appearOnScroll from './appearOnScroll.js';
+import pathfinderGame from './pathfinderGame.js';
 const app = {
   init: function () {
     const thisApp = this;
     thisApp.getElements();
     thisApp.initPages();
     thisApp.initActions();
+    thisApp.initGame();
   },
 
   initPages: function () {
@@ -62,11 +64,15 @@ const app = {
     const thisApp = this;
     new appearOnScroll(thisApp.cards);
   },
+
   getElements: function () {
     const thisApp = this;
     thisApp.pages = document.querySelector(settings.select.pages).children;
     thisApp.navLinks = document.querySelectorAll(settings.select.links);
     thisApp.cards = document.querySelectorAll(settings.select.cards);
+  },
+  initGame: function () {
+    new pathfinderGame();
   },
 };
 

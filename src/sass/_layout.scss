@@ -1,4 +1,6 @@
 .pages {
+  min-height: 1100px;
+
   > * {
     display: none;
   }
@@ -11,4 +13,10 @@
 .card-wrapper {
   width: 98vw;
   position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
