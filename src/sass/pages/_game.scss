@@ -8,6 +8,33 @@
   .game-tile {
     width: 40px;
     height: 40px;
+    position: relative;
+    white-space: nowrap;
+
+    p {
+      font-size: 20px;
+      font-weight: 700;
+      color: red;
+      opacity: 80%;
+      position: absolute;
+      top: -50%;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
+  .game-tile:hover {
+    transform: scale(0.95);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.4);
+    }
   }
 
   .game-board {
@@ -45,5 +72,22 @@
 
   .active {
     background: $color-orange;
+  }
+
+  .end-tile {
+    background: $color-red;
+  }
+
+  .start-tile,
+  .solved-tile {
+    background: $color-green;
+  }
+}
+
+@media (max-width: 768px) {
+  .game {
+    .game-button {
+      margin-bottom: 40px;
+    }
   }
 }

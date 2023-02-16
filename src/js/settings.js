@@ -15,6 +15,10 @@ const settings = {
     activeTile: 'active',
     observerPoint: 'observer-point',
     tile: 'game-tile',
+    startTile: 'start-tile',
+    endTile: 'end-tile',
+    solvedTile: 'solved-tile',
+    calculatedTile: 'calculated',
   },
   attribute: {
     tileWidth: 42,

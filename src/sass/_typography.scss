@@ -47,3 +47,23 @@ h3,
 a {
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-right: -15px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 25px;
+  }
+}

@@ -46,3 +46,31 @@
   opacity: 100%;
   transform: translateX(0);
 }
+
+@media (max-width: 768px) {
+  .right,
+  .left {
+    background-position: 0 center;
+    background-size: auto 80%;
+
+    > * {
+      margin-left: 20px;
+    }
+  }
+
+  .card {
+    padding: 20px 0;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .right {
+    margin-top: 10px;
+  }
+}
