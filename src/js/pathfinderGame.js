@@ -363,12 +363,12 @@ class pathfinderGame {
         for (const tile of thisGame.activeTiles) {
           tile.className = '';
           tile.classList.add(settings.classNames.tile);
-          thisGame.dom.text.innerText = 'draw routes';
-          thisGame.dom.text.innerText = 'finish drawing';
         }
         thisGame.startTile = null;
         thisGame.endTile = null;
         thisGame.activeTiles.splice(0, thisGame.activeTiles.length);
+        thisGame.dom.text.innerText = texts[0];
+        thisGame.dom.button.innerText = 'finish drawing';
         thisGame.stage = 1;
         break;
     }
