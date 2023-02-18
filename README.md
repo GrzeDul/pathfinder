@@ -1,2 +1,2 @@
-# pathfinder-game
-https://pathfinder-game.gregsta.repl.co/
+# pathfinder
+https://pathfinder.gregsta.repl.co/
